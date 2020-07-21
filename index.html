@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/myPlayer.css">
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/myPlayer.js"></script>
+</head>
+<body>
+	<div class="player">
+		<!-- 播放的视频 -->
+		<video src="./video/你的名字.mp4"></video>
+		<!-- 控制模块 -->
+		<div class="controls">
+			<!-- 播放开关 -->
+			<a class="switch fa fa-play" href="javascript:;"></a>
+			<!-- 全屏按钮 -->
+			<a class="expand fa fa-expand" href="javascript:;"></a>
+			<!-- 进度条 -->
+			<div class="progress">
+				<!-- 用来触发点击事件 -->
+				<div class="bar"></div>
+				<!-- 显示已经加载的，现在是静态的 -->
+				<div class="loaded"></div>
+				<!-- 显示当前的进度 -->
+				<div class="elapse"></div>
+			</div>
+			<!-- 显示时间 -->
+			<div class="time">
+				<!-- 当前进度的时间 -->
+				<span class="currentTime">00:00:00</span>
+				/
+				<!-- 总的时间 -->
+				<span class="totalTime">00:00:00</span>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
